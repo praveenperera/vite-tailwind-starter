@@ -1,7 +1,7 @@
 <template>
   <main>
     <div
-      class="px-4 py-6 mt-10 sm:px-0 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+      class="mt-10 px-4 py-6 sm:mt-12 sm:px-0 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
     >
       <div class="sm:text-center lg:text-left">
         <h2
@@ -17,7 +17,7 @@
           >
         </h2>
         <p
-          class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+          class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
         >
           All the code present here is part of a free sample from
           <a
@@ -37,15 +37,15 @@
           <div class="rounded-md shadow">
             <a
               href="https://github.com/posva/vite-tailwind-starter"
-              class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md md:py-4 md:text-lg md:px-10 hover:bg-indigo-500 focus:outline-none focus:ring"
+              class="focus:outline-none flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:ring md:px-10 md:py-4 md:text-lg"
             >
               Get started
             </a>
           </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
+          <div class="mt-3 sm:ml-3 sm:mt-0">
             <a
               href="#"
-              class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md md:py-4 md:text-lg md:px-10 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:ring focus:border-indigo-300"
+              class="focus:outline-none flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-50 hover:text-indigo-600 focus:border-indigo-300 focus:ring md:px-10 md:py-4 md:text-lg"
             >
               Live demo
             </a>
@@ -57,5 +57,5 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>

@@ -1,18 +1,18 @@
 <template>
   <div>
     <nav class="bg-gray-800">
-      <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
             <div class="flex-shrink-0">
               <img
-                class="w-8 h-8"
+                class="h-8 w-8"
                 src="/img/logos/workflow-mark-on-dark.svg"
                 alt="Workflow logo"
               />
             </div>
             <div class="hidden md:block">
-              <div class="flex items-baseline ml-10">
+              <div class="ml-10 flex items-baseline">
                 <router-link
                   v-for="(link, i) in links"
                   :key="i"
@@ -23,11 +23,11 @@
                   <a
                     :href="href"
                     @click="navigate"
-                    class="px-3 py-2 text-sm font-medium rounded-md"
+                    class="rounded-md px-3 py-2 text-sm font-medium"
                     :class="[
                       isExactActive
-                        ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700'
-                        : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700',
+                        ? 'focus:outline-none bg-gray-900 text-white focus:bg-gray-700 focus:text-white'
+                        : 'focus:outline-none text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white',
                       i > 0 && 'ml-4',
                     ]"
                     >{{ link.text }}</a
@@ -37,13 +37,13 @@
             </div>
           </div>
           <div class="hidden md:block">
-            <div class="flex items-center ml-4 md:ml-6">
+            <div class="ml-4 flex items-center md:ml-6">
               <button
-                class="p-1 text-gray-400 border-2 border-transparent rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
+                class="focus:outline-none rounded-full border-2 border-transparent p-1 text-gray-400 hover:text-white focus:bg-gray-700 focus:text-white"
                 aria-label="Notifications"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="h-6 w-6"
                   stroke="currentColor"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -61,14 +61,14 @@
               <div class="relative ml-3">
                 <div>
                   <button
-                    class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid"
+                    class="focus:outline-none focus:shadow-solid flex max-w-xs items-center rounded-full text-sm text-white"
                     id="user-menu"
                     aria-label="User menu"
                     aria-haspopup="true"
                     @click="showProfileMenu = !showProfileMenu"
                   >
                     <img
-                      class="w-8 h-8 rounded-full"
+                      class="h-8 w-8 rounded-full"
                       src="/img/person1.jpeg"
                       alt=""
                     />
@@ -85,10 +85,10 @@
                 >
                   <div
                     v-if="showProfileMenu"
-                    class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg"
+                    class="absolute right-0 mt-2 w-48 origin-top-right rounded-md shadow-lg"
                   >
                     <div
-                      class="py-1 bg-white rounded-md ring-1 ring-black ring-opacity-5"
+                      class="rounded-md bg-white py-1 ring-1 ring-black ring-opacity-5"
                       role="menu"
                       aria-orientation="vertical"
                       aria-labelledby="user-menu"
@@ -118,15 +118,15 @@
             </div>
           </div>
 
-          <div class="flex -mr-2 md:hidden">
+          <div class="-mr-2 flex md:hidden">
             <!-- Mobile menu button -->
             <button
-              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="focus:outline-none inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
               @click="showMenu = !showMenu"
             >
               <!-- Menu open: "hidden", Menu closed: "block" -->
               <svg
-                class="block w-6 h-6"
+                class="block h-6 w-6"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -140,7 +140,7 @@
               </svg>
               <!-- Menu open: "block", Menu closed: "hidden" -->
               <svg
-                class="hidden w-6 h-6"
+                class="hidden h-6 w-6"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -163,7 +163,7 @@
       Open: "block", closed: "hidden"
     -->
       <div class="md:hidden" :class="showMenu ? 'block' : 'hidden'">
-        <div class="px-2 pt-2 pb-3 sm:px-3">
+        <div class="px-2 pb-3 pt-2 sm:px-3">
           <router-link
             v-for="(link, i) in links"
             :key="i"
@@ -174,22 +174,22 @@
             <a
               :href="href"
               @click="navigate().then(() => (showMenu = false))"
-              class="block px-3 py-2 text-base font-medium rounded-md"
+              class="block rounded-md px-3 py-2 text-base font-medium"
               :class="[
                 isExactActive
-                  ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700'
-                  : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700',
+                  ? 'focus:outline-none bg-gray-900 text-white focus:bg-gray-700 focus:text-white'
+                  : 'focus:outline-none text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white',
                 i > 0 && 'mt-1',
               ]"
               >{{ link.text }}</a
             >
           </router-link>
         </div>
-        <div class="pt-4 pb-3 border-t border-gray-700">
+        <div class="border-t border-gray-700 pb-3 pt-4">
           <div class="flex items-center px-5">
             <div class="flex-shrink-0">
               <img
-                class="w-10 h-10 rounded-full"
+                class="h-10 w-10 rounded-full"
                 src="/img/person1.jpeg"
                 alt=""
               />
@@ -203,20 +203,20 @@
               </div>
             </div>
           </div>
-          <div class="px-2 mt-3">
+          <div class="mt-3 px-2">
             <a
               href="#"
-              class="block px-3 py-2 text-base font-medium text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              class="focus:outline-none block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
               >Your Profile</a
             >
             <a
               href="#"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              class="focus:outline-none mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
               >Settings</a
             >
             <a
               href="#"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              class="focus:outline-none mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
               >Sign out</a
             >
           </div>
@@ -225,30 +225,30 @@
     </nav>
 
     <header class="bg-white shadow" v-if="$route.meta.title">
-      <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold leading-tight text-gray-900">
           {{ $route.meta.title }}
         </h1>
       </div>
     </header>
 
-    <div class="max-w-screen-xl py-6 mx-auto sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-screen-xl py-6 sm:px-6 lg:px-8">
       <router-view />
     </div>
   </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
   data: () => ({
     showMenu: false,
     showProfileMenu: false,
     links: [
-      { text: 'Home', to: '/' },
-      { text: 'About', to: '/about' },
+      { text: "Home", to: "/" },
+      { text: "About", to: "/about" },
     ],
   }),
-})
+});
 </script>
