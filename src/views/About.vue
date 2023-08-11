@@ -37,7 +37,7 @@
           <div class="rounded-md shadow">
             <a
               href="https://github.com/posva/vite-tailwind-starter"
-              class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out md:px-10 md:py-4 md:text-lg hover:bg-indigo-500 focus:outline-none focus:ring"
+              class="focus:outline-none flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:ring md:px-10 md:py-4 md:text-lg"
             >
               Get started
             </a>
@@ -45,7 +45,7 @@
           <div class="mt-3 sm:ml-3 sm:mt-0">
             <a
               href="#"
-              class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out md:px-10 md:py-4 md:text-lg hover:bg-indigo-50 hover:text-indigo-600 focus:outline-none focus:border-indigo-300 focus:ring"
+              class="focus:outline-none flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-50 hover:text-indigo-600 focus:border-indigo-300 focus:ring md:px-10 md:py-4 md:text-lg"
             >
               Live demo
             </a>
