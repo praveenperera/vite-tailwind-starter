@@ -39,7 +39,7 @@
           <div class="hidden md:block">
             <div class="flex items-center ml-4 md:ml-6">
               <button
-                class="p-1 text-gray-400 border-2 border-transparent rounded-full  hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
+                class="p-1 text-gray-400 border-2 border-transparent rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
                 aria-label="Notifications"
               >
                 <svg
@@ -61,7 +61,7 @@
               <div class="relative ml-3">
                 <div>
                   <button
-                    class="flex items-center max-w-xs text-sm text-white rounded-full  focus:outline-none focus:shadow-solid"
+                    class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid"
                     id="user-menu"
                     aria-label="User menu"
                     aria-haspopup="true"
@@ -85,29 +85,29 @@
                 >
                   <div
                     v-if="showProfileMenu"
-                    class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg "
+                    class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg"
                   >
                     <div
-                      class="py-1 bg-white rounded-md  ring-1 ring-black ring-opacity-5"
+                      class="py-1 bg-white rounded-md ring-1 ring-black ring-opacity-5"
                       role="menu"
                       aria-orientation="vertical"
                       aria-labelledby="user-menu"
                     >
                       <a
                         href="#"
-                        class="block px-4 py-2 text-sm text-gray-700  hover:bg-gray-100"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         role="menuitem"
                         >Your Profile</a
                       >
                       <a
                         href="#"
-                        class="block px-4 py-2 text-sm text-gray-700  hover:bg-gray-100"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         role="menuitem"
                         >Settings</a
                       >
                       <a
                         href="#"
-                        class="block px-4 py-2 text-sm text-gray-700  hover:bg-gray-100"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         role="menuitem"
                         >Sign out</a
                       >
@@ -121,7 +121,7 @@
           <div class="flex -mr-2 md:hidden">
             <!-- Mobile menu button -->
             <button
-              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md  hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
               @click="showMenu = !showMenu"
             >
               <!-- Menu open: "hidden", Menu closed: "block" -->
@@ -206,17 +206,17 @@
           <div class="px-2 mt-3">
             <a
               href="#"
-              class="block px-3 py-2 text-base font-medium text-gray-400 rounded-md  hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              class="block px-3 py-2 text-base font-medium text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
               >Your Profile</a
             >
             <a
               href="#"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-400 rounded-md  hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              class="block px-3 py-2 mt-1 text-base font-medium text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
               >Settings</a
             >
             <a
               href="#"
-              class="block px-3 py-2 mt-1 text-base font-medium text-gray-400 rounded-md  hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              class="block px-3 py-2 mt-1 text-base font-medium text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
               >Sign out</a
             >
           </div>
