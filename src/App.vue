@@ -34,8 +34,8 @@
                     class="rounded-md px-3 py-2 text-sm font-medium"
                     :class="[
                       isExactActive
-                        ? 'focus:outline-none bg-gray-900 text-white focus:bg-gray-700 focus:text-white'
-                        : 'focus:outline-none text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white',
+                        ? 'bg-gray-900 text-white focus:bg-gray-700 focus:text-white focus:outline-none'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none',
                       i > 0 && 'ml-4',
                     ]"
                     >{{ link.text }}</a
@@ -47,7 +47,7 @@
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
               <button
-                class="rounded-full border-2 border-transparent p-1 text-gray-400 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
+                class="rounded-full border-2 border-transparent p-1 text-gray-400 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none"
                 aria-label="Notifications"
               >
                 <svg
@@ -69,7 +69,7 @@
               <div class="relative ml-3">
                 <div>
                   <button
-                    class="flex max-w-xs items-center rounded-full text-sm text-white focus:outline-none focus:shadow-solid"
+                    class="focus:shadow-solid flex max-w-xs items-center rounded-full text-sm text-white focus:outline-none"
                     id="user-menu"
                     aria-label="User menu"
                     aria-haspopup="true"
@@ -129,7 +129,7 @@
           <div class="-mr-2 flex md:hidden">
             <!-- Mobile menu button -->
             <button
-              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none"
               @click="showMenu = !showMenu"
             >
               <!-- Menu open: "hidden", Menu closed: "block" -->
@@ -185,8 +185,8 @@
               class="block rounded-md px-3 py-2 text-base font-medium"
               :class="[
                 isExactActive
-                  ? 'focus:outline-none bg-gray-900 text-white focus:bg-gray-700 focus:text-white'
-                  : 'focus:outline-none text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white',
+                  ? 'bg-gray-900 text-white focus:bg-gray-700 focus:text-white focus:outline-none'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none',
                 i > 0 && 'mt-1',
               ]"
               >{{ link.text }}</a
@@ -214,17 +214,17 @@
           <div class="mt-3 px-2">
             <a
               href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none"
               >Your Profile</a
             >
             <a
               href="#"
-              class="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none"
               >Settings</a
             >
             <a
               href="#"
-              class="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
+              class="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none"
               >Sign out</a
             >
           </div>
