@@ -39,7 +39,7 @@
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
               <button
-                class="focus:outline-none rounded-full border-2 border-transparent p-1 text-gray-400 hover:text-white focus:bg-gray-700 focus:text-white"
+                class="rounded-full border-2 border-transparent p-1 text-gray-400 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
                 aria-label="Notifications"
               >
                 <svg
@@ -61,7 +61,7 @@
               <div class="relative ml-3">
                 <div>
                   <button
-                    class="focus:outline-none focus:shadow-solid flex max-w-xs items-center rounded-full text-sm text-white"
+                    class="flex max-w-xs items-center rounded-full text-sm text-white focus:outline-none focus:shadow-solid"
                     id="user-menu"
                     aria-label="User menu"
                     aria-haspopup="true"
@@ -121,7 +121,7 @@
           <div class="-mr-2 flex md:hidden">
             <!-- Mobile menu button -->
             <button
-              class="focus:outline-none inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
               @click="showMenu = !showMenu"
             >
               <!-- Menu open: "hidden", Menu closed: "block" -->
@@ -206,17 +206,17 @@
           <div class="mt-3 px-2">
             <a
               href="#"
-              class="focus:outline-none block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
               >Your Profile</a
             >
             <a
               href="#"
-              class="focus:outline-none mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
+              class="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
               >Settings</a
             >
             <a
               href="#"
-              class="focus:outline-none mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white"
+              class="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:bg-gray-700 focus:text-white"
               >Sign out</a
             >
           </div>
